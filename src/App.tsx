@@ -25,6 +25,7 @@ import { CtaSection } from './components/CtaSection';
 import { ContactUs } from './components/ContactUs';
 import { Blog } from './components/Blog';
 import { Footer } from './components/Footer';
+import { AdvertisementSection } from './components/AdvertisementSection';
 
 // Icons for general layout if any
 import { ArrowUp, Terminal, Shield, Sparkles } from 'lucide-react';
@@ -188,9 +189,11 @@ export default function App() {
                   <TrustMarquee />
                 </div>
                 <Stats />
+                <AdvertisementSection />
                 <WhyChooseUs />
                 <TechnologyStack />
                 <TeamSection />
+                <AdvertisementSection />
                 <CtaSection onCtaclick={handleNavigatePageOrSection} />
               </div>
             )}
@@ -199,6 +202,7 @@ export default function App() {
               <div className="pt-24 md:pt-[100px] animate-fade-in">
                 <AboutUs />
                 <Certifications />
+                <AdvertisementSection />
                 <GlobalPresence />
                 <Testimonials />
                 <CtaSection onCtaclick={handleNavigatePageOrSection} />
@@ -208,6 +212,7 @@ export default function App() {
             {activePage === 'solutions' && (
               <div className="pt-24 md:pt-[100px] animate-fade-in">
                 <FeaturedSolutions onCtaclick={handleNavigatePageOrSection} />
+                <AdvertisementSection />
                 <CtaSection onCtaclick={handleNavigatePageOrSection} />
               </div>
             )}
@@ -216,6 +221,7 @@ export default function App() {
               <div className="pt-24 md:pt-[100px] animate-fade-in">
                 <Services />
                 <DevelopmentProcess />
+                <AdvertisementSection />
                 <Industries />
                 <CtaSection onCtaclick={handleNavigatePageOrSection} />
               </div>
@@ -224,6 +230,7 @@ export default function App() {
             {activePage === 'portfolio' && (
               <div className="pt-24 md:pt-[100px] animate-fade-in">
                 <PortfolioShowcase />
+                <AdvertisementSection />
                 <Insights />
                 <Careers />
                 <CtaSection onCtaclick={handleNavigatePageOrSection} />
@@ -233,12 +240,14 @@ export default function App() {
             {activePage === 'contact' && (
               <div className="pt-24 md:pt-[100px] animate-fade-in">
                 <ContactUs />
+                <AdvertisementSection />
               </div>
             )}
 
             {activePage === 'blog' && (
               <div className="pt-24 md:pt-[100px] animate-fade-in">
                 <Blog activeSection={activeSection} onNavigate={handleNavigatePageOrSection} />
+                <AdvertisementSection />
               </div>
             )}
           </motion.div>
