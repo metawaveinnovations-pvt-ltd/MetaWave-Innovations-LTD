@@ -172,6 +172,12 @@
 
   <!-- Blog Publication Nodes (Priority: 0.70) -->
   <url>
+    <loc>https://www.metawaveinnovations.com/blog/startup-packages-website-branding</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
     <loc>https://www.metawaveinnovations.com/blog/full-stack-development-guide</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>

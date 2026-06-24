@@ -54,7 +54,15 @@ export function Blog({ activeSection, onNavigate }: BlogProps) {
   const [posts, setPosts] = useState<BlogPost[]>(() => {
     try {
       const saved = localStorage.getItem('metawave_blog_posts_v1');
-      return saved ? JSON.parse(saved) : blogPosts;
+      if (saved) {
+        const parsed = JSON.parse(saved) as BlogPost[];
+        // Robustly merge any default posts that are missing in localStorage
+        const missingDefaultPosts = blogPosts.filter(
+          defaultPost => !parsed.some(savedPost => savedPost.id === defaultPost.id)
+        );
+        return [...parsed, ...missingDefaultPosts];
+      }
+      return blogPosts;
     } catch (e) {
       console.error('Failed to load posts from localStorage', e);
       return blogPosts;
