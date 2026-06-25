@@ -1083,7 +1083,7 @@ export function Blog({ activeSection, onNavigate }: BlogProps) {
                 
                 <div 
                   onClick={() => onNavigate(`blog-post-${featuredPost.id}`)}
-                  className="group bg-white rounded-3xl border border-slate-200/90 hover:border-emerald-500/35 p-5 lg:p-7 shadow-[0_12px_45px_-12px_rgba(15,23,42,0.03)] hover:shadow-[0_25px_60px_-15px_rgba(16,185,129,0.08)] hover:-translate-y-1 transition-all duration-500 flex flex-col lg:flex-row gap-8 cursor-pointer relative overflow-hidden"
+                  className="group bg-white rounded-3xl border border-slate-200/90 hover:border-emerald-500/40 p-5 lg:p-7 shadow-[0_12px_45px_-12px_rgba(15,23,42,0.03)] hover:shadow-[0_35px_70px_-15px_rgba(16,185,129,0.14),0_10px_30px_rgba(15,23,42,0.04)] hover:scale-[1.015] hover:-translate-y-1.5 transition-all duration-500 flex flex-col lg:flex-row gap-8 cursor-pointer relative overflow-hidden"
                 >
                   {/* Decorative faint layout border details */}
                   <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 rounded-full blur-3xl group-hover:bg-emerald-500/10 transition-colors pointer-events-none" />
@@ -1203,7 +1203,7 @@ export function Blog({ activeSection, onNavigate }: BlogProps) {
                       transition={{ delay: idx * 0.05, duration: 0.3 }}
                       key={post.id}
                       onClick={() => onNavigate(`blog-post-${post.id}`)}
-                      className="group bg-white rounded-2xl border border-slate-200/90 hover:border-emerald-500/25 p-5 shadow-[0_4px_25px_rgba(15,23,42,0.01)] hover:shadow-[0_15px_35px_-8px_rgba(16,185,129,0.06)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full cursor-pointer relative"
+                      className="group bg-white rounded-2xl border border-slate-200/90 hover:border-emerald-500/30 p-5 shadow-[0_4px_25px_rgba(15,23,42,0.01)] hover:shadow-[0_25px_50px_-12px_rgba(16,185,129,0.12),0_8px_24px_-4px_rgba(15,23,42,0.04)] hover:scale-[1.02] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between h-full cursor-pointer relative"
                     >
                       {/* Subtle hover background highlight node bar */}
                       <div className="absolute top-0 left-0 right-0 h-[3px] bg-transparent group-hover:bg-gradient-to-r group-hover:from-emerald-500 group-hover:to-teal-500 transition-colors rounded-t-2xl" />
@@ -1773,7 +1773,7 @@ export function Blog({ activeSection, onNavigate }: BlogProps) {
                       <div
                         key={post.id}
                         onClick={() => onNavigate(`blog-post-${post.id}`)}
-                        className="group bg-white rounded-2xl border border-slate-200/95 hover:border-emerald-500/25 p-5 shadow-[0_4px_20px_rgba(15,23,42,0.01)] hover:shadow-[0_12px_30px_-8px_rgba(16,185,129,0.05)] transition-all cursor-pointer flex flex-col justify-between"
+                        className="group bg-white rounded-2xl border border-slate-200/95 hover:border-emerald-500/30 p-5 shadow-[0_4px_20px_rgba(15,23,42,0.01)] hover:shadow-[0_22px_45px_-10px_rgba(16,185,129,0.10),0_6px_18px_-3px_rgba(15,23,42,0.03)] hover:scale-[1.02] hover:-translate-y-1.5 transition-all duration-300 cursor-pointer flex flex-col justify-between relative overflow-hidden"
                       >
                         <div>
                           <div className="flex items-center justify-between mb-3 text-[10px] font-mono text-slate-400 font-bold uppercase">
